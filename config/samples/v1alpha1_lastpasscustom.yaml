@@ -1,0 +1,17 @@
+apiVersion: edgelevel.com/v1alpha1
+kind: LastPassCustom
+metadata:
+  labels:
+    app.kubernetes.io/name: lastpass-operator
+    app.kubernetes.io/managed-by: kustomize
+  name: lastpasscustom-sample
+spec:
+  # optional (default "")
+    group: SampleGroup
+    # required
+    name: Sample
+  syncPolicy:
+    # required (default false)
+    enabled: true
+    # required (in seconds)
+    refresh: 60

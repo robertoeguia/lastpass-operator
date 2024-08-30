@@ -19,6 +19,32 @@ rules:
 - apiGroups:
   - edgelevel.com
   resources:
+  - lastpasscustoms
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - edgelevel.com
+  resources:
+  - lastpasscustoms/finalizers
+  verbs:
+  - update
+- apiGroups:
+  - edgelevel.com
+  resources:
+  - lastpasscustoms/status
+  verbs:
+  - get
+  - patch
+  - update
+- apiGroups:
+  - edgelevel.com
+  resources:
   - lastpasses
   verbs:
   - create

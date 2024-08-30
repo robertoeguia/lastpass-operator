@@ -27,4 +27,12 @@ resources:
   kind: LastPassGroup
   path: github.com/edgelevel/lastpass-operator/api/v1alpha1
   version: v1alpha1
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: edgelevel.com
+  kind: LastPassCustom
+  path: github.com/edgelevel/lastpass-operator/api/v1alpha1
+  version: v1alpha1
 version: "3"
